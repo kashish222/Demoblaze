@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-02-28T09:22:41 IST" name="Suite" finished-at="2022-02-28T09:23:44 IST" duration-ms="62797">
+    <groups>
+    </groups>
+    <test started-at="2022-02-28T09:22:41 IST" name="Test" finished-at="2022-02-28T09:22:51 IST" duration-ms="9579">
+      <class name="HomePage">
+        <test-method is-config="true" signature="beforetest()[pri:0, instance:HomePage@795509d9]" started-at="2022-02-28T09:22:41 IST" name="beforetest" finished-at="2022-02-28T09:22:48 IST" duration-ms="6337" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforetest -->
+        <test-method signature="test1()[pri:0, instance:HomePage@795509d9]" started-at="2022-02-28T09:22:48 IST" name="test1" finished-at="2022-02-28T09:22:51 IST" duration-ms="3012" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method is-config="true" signature="aftertest()[pri:0, instance:HomePage@795509d9]" started-at="2022-02-28T09:22:51 IST" name="aftertest" finished-at="2022-02-28T09:22:51 IST" duration-ms="196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftertest -->
+      </class> <!-- HomePage -->
+    </test> <!-- Test -->
+    <test started-at="2022-02-28T09:22:51 IST" name="Test1" finished-at="2022-02-28T09:22:57 IST" duration-ms="6571">
+      <class name="ContactPage">
+        <test-method is-config="true" signature="beforetest()[pri:0, instance:ContactPage@3e08ff24]" started-at="2022-02-28T09:22:51 IST" name="beforetest" finished-at="2022-02-28T09:22:56 IST" duration-ms="5310" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforetest -->
+        <test-method signature="testmethod1()[pri:0, instance:ContactPage@3e08ff24]" started-at="2022-02-28T09:22:56 IST" name="testmethod1" finished-at="2022-02-28T09:22:57 IST" duration-ms="1068" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testmethod1 -->
+        <test-method is-config="true" signature="aftertest()[pri:0, instance:ContactPage@3e08ff24]" started-at="2022-02-28T09:22:57 IST" name="aftertest" finished-at="2022-02-28T09:22:57 IST" duration-ms="187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftertest -->
+      </class> <!-- ContactPage -->
+    </test> <!-- Test1 -->
+    <test started-at="2022-02-28T09:22:58 IST" name="Test2" finished-at="2022-02-28T09:23:07 IST" duration-ms="8980">
+      <class name="SignupPage">
+        <test-method is-config="true" signature="beforetest()[pri:0, instance:SignupPage@59402b8f]" started-at="2022-02-28T09:22:58 IST" name="beforetest" finished-at="2022-02-28T09:23:02 IST" duration-ms="4901" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforetest -->
+        <test-method signature="test()[pri:1, instance:SignupPage@59402b8f]" started-at="2022-02-28T09:23:02 IST" name="test" finished-at="2022-02-28T09:23:04 IST" duration-ms="1809" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method signature="test1()[pri:2, instance:SignupPage@59402b8f]" started-at="2022-02-28T09:23:04 IST" name="test1" finished-at="2022-02-28T09:23:06 IST" duration-ms="2121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method is-config="true" signature="aftertest()[pri:0, instance:SignupPage@59402b8f]" started-at="2022-02-28T09:23:06 IST" name="aftertest" finished-at="2022-02-28T09:23:07 IST" duration-ms="140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftertest -->
+      </class> <!-- SignupPage -->
+    </test> <!-- Test2 -->
+    <test started-at="2022-02-28T09:23:07 IST" name="Test3" finished-at="2022-02-28T09:23:16 IST" duration-ms="9400">
+      <class name="LoginPage">
+        <test-method is-config="true" signature="beforetest()[pri:0, instance:LoginPage@609e8838]" started-at="2022-02-28T09:23:07 IST" name="beforetest" finished-at="2022-02-28T09:23:11 IST" duration-ms="4951" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforetest -->
+        <test-method signature="test()[pri:0, instance:LoginPage@609e8838]" started-at="2022-02-28T09:23:11 IST" name="test" finished-at="2022-02-28T09:23:13 IST" duration-ms="1575" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method signature="test1()[pri:0, instance:LoginPage@609e8838]" started-at="2022-02-28T09:23:13 IST" name="test1" finished-at="2022-02-28T09:23:16 IST" duration-ms="2678" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method is-config="true" signature="aftertest()[pri:0, instance:LoginPage@609e8838]" started-at="2022-02-28T09:23:16 IST" name="aftertest" finished-at="2022-02-28T09:23:16 IST" duration-ms="190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftertest -->
+      </class> <!-- LoginPage -->
+    </test> <!-- Test3 -->
+    <test started-at="2022-02-28T09:23:16 IST" name="Test4" finished-at="2022-02-28T09:23:31 IST" duration-ms="15448">
+      <class name="CartPage">
+        <test-method is-config="true" signature="beforetest()[pri:0, instance:CartPage@19932c16]" started-at="2022-02-28T09:23:16 IST" name="beforetest" finished-at="2022-02-28T09:23:22 IST" duration-ms="5859" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforetest -->
+        <test-method signature="test()[pri:0, instance:CartPage@19932c16]" started-at="2022-02-28T09:23:22 IST" name="test" finished-at="2022-02-28T09:23:31 IST" duration-ms="9430" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="aftertest()[pri:0, instance:CartPage@19932c16]" started-at="2022-02-28T09:23:31 IST" name="aftertest" finished-at="2022-02-28T09:23:31 IST" duration-ms="155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftertest -->
+      </class> <!-- CartPage -->
+    </test> <!-- Test4 -->
+    <test started-at="2022-02-28T09:23:31 IST" name="Test5" finished-at="2022-02-28T09:23:44 IST" duration-ms="12520">
+      <class name="Logout">
+        <test-method is-config="true" signature="beforetest()[pri:0, instance:Logout@1040be71]" started-at="2022-02-28T09:23:31 IST" name="beforetest" finished-at="2022-02-28T09:23:38 IST" duration-ms="6262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforetest -->
+        <test-method signature="test()[pri:0, instance:Logout@1040be71]" started-at="2022-02-28T09:23:38 IST" name="test" finished-at="2022-02-28T09:23:44 IST" duration-ms="6061" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="aftertest()[pri:0, instance:Logout@1040be71]" started-at="2022-02-28T09:23:44 IST" name="aftertest" finished-at="2022-02-28T09:23:44 IST" duration-ms="193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftertest -->
+      </class> <!-- Logout -->
+    </test> <!-- Test5 -->
+  </suite> <!-- Suite -->
+</testng-results>
