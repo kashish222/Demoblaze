@@ -22,13 +22,11 @@ public  void test() throws InterruptedException
 {
 	    	driver.manage().window().maximize();
 driver.findElement(By.id("login2")).click();
-Username = driver.findElement(By.className("form-control-label")).getText();
-if (Username.contentEquals("Username:"));
-{ System.out.println(true);}
+Username = driver.findElement(By.xpath("//body/div[@id='logInModal']/div[1]/div[1]/div[2]/form[1]/div[1]/label[1]")).getText();
+System.out.println(Username);
 
-Password = driver.findElement(By.className("form-control-label")).getText();
-if (Password.contentEquals("Password:"));
-{System.out.println(true);}
+Password = driver.findElement(By.xpath("//body/div[@id='logInModal']/div[1]/div[1]/div[2]/form[1]/div[2]/label[1]")).getText();
+System.out.println(Password);
 
 WebDriverWait wait = new WebDriverWait(driver, 20);
 wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("loginusername")));
