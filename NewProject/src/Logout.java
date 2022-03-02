@@ -3,14 +3,15 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class Logout {
 
-static String Username;
-static String Password;
+static boolean Username;
+static boolean Password;
 	WebDriver driver;
 	 @BeforeTest
 	    public void beforetest() {
@@ -28,13 +29,10 @@ static String Password;
 public  void test() throws InterruptedException
 {
 driver.findElement(By.id("login2")).click();
-Username = driver.findElement(By.className("form-control-label")).getText();
-if (Username.contentEquals("Username:"));
-{ System.out.println(true);}
-
-Password = driver.findElement(By.className("form-control-label")).getText();
-if (Password.contentEquals("Password:"));
-{System.out.println(true);}
+Username=driver.findElement(By.xpath("//label[@for='log-name']")).isEnabled();
+Password=driver.findElement(By.xpath("//label[@for='log-pass']")).isEnabled();
+Assert.assertTrue(Username);
+Assert.assertTrue(Password);
 Thread.sleep(200);
 //valid user-name and password
 driver.findElement(By.id("loginusername")).sendKeys("Charles Johnson");

@@ -1,6 +1,7 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -30,9 +31,10 @@ public static String moniString;
 					 driver.findElement(By.linkText("Monitors")).click();
 					 moniString=driver.findElement(By.xpath("//body[1]/div[5]/div[1]/div[1]/div[1]/a[4]")).getText();
 					 System.out.println(moniString);
-        if (phoneString.contentEquals("Phones")&&lapString.contentEquals("Laptops")&&moniString.contentEquals("Monitors"))
-					 {
-						 System.out.println("Test Passed");}}
+					 Assert.assertTrue(phoneString.contains("Phones"));
+					 Assert.assertTrue(lapString.contains("Laptops"));
+					 Assert.assertTrue(moniString.contains("Monitors"));
+		 }
 		    @AfterTest
 		    public void aftertest(){
 		        driver.close();

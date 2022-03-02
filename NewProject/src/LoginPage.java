@@ -4,12 +4,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 public class LoginPage {
-static String Username;
-static String Password;
+static boolean Username;
+static boolean Password;
 	WebDriver driver;
 	 @BeforeTest
 	    public void beforetest() {
@@ -22,13 +23,13 @@ public  void test() throws InterruptedException
 {
 	    	driver.manage().window().maximize();
 driver.findElement(By.id("login2")).click();
-Username = driver.findElement(By.className("form-control-label")).getText();
-if (Username.contentEquals("Username:"));
-{ System.out.println(true);}
+Username=driver.findElement(By.xpath("//label[@for='log-name']")).isEnabled();
+Password=driver.findElement(By.xpath("//label[@for='log-pass']")).isEnabled();
+Assert.assertTrue(Username);
+Assert.assertTrue(Password);
 
-Password = driver.findElement(By.className("form-control-label")).getText();
-if (Password.contentEquals("Password:"));
-{System.out.println(true);}
+
+
 
 WebDriverWait wait = new WebDriverWait(driver, 20);
 wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("loginusername")));
@@ -49,13 +50,10 @@ System.out.println("Login Successful!");
 	    {
 	    	driver.navigate().to("https://www.demoblaze.com/index.html");
 	    driver.findElement(By.id("login2")).click();
-	    Username = driver.findElement(By.className("form-control-label")).getText();
-	    if (Username.contentEquals("Username:"));
-	    { System.out.println(true);}
-
-	    Password = driver.findElement(By.className("form-control-label")).getText();
-	    if (Password.contentEquals("Password:"));
-	    {System.out.println(true);}
+	    Username=driver.findElement(By.xpath("//label[@for='log-name']")).isEnabled();
+	    Password=driver.findElement(By.xpath("//label[@for='log-pass']")).isEnabled();
+	    Assert.assertTrue(Username);
+	    Assert.assertTrue(Password);
 	    WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("loginpassword")));
 	    //leaving  user-name blank and providing only password
@@ -69,7 +67,7 @@ System.out.println("Login Successful!");
      	System.out.println(alert.getText());
      	alert.accept();
 }
-	    @AfterTest
+	    @AfterTest     
 	    public void aftertest(){
 	        driver.close();
 	    }
